@@ -24,6 +24,7 @@ CMD ["dotnet", "ApiWeatherForecast.dll"]
 # on exécute le dll
 
 # commande à utiliser pour build l'image :
+# on devra se déplacer dans le dossier du dokerfile avant d'éxécuter la commande suivante
 # docker build -t apiweatherforecast-image .
 
 # commande à utiliser pour lancer le conteneur depuis l'image :
