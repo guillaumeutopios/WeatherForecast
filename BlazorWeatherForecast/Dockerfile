@@ -18,4 +18,4 @@ COPY --from=publish /app/publish/wwwroot .
 # docker build -t blazorweatherforecast-image .
 
 # commande à utiliser pour lancer le conteneur depuis l'image :
-# docker run -d -p 3630:80 blazorweatherforecast-image --name blazor
+# docker run -d -p 3630:80 --name blazor blazorweatherforecast-image
