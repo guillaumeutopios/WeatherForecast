@@ -28,4 +28,4 @@ CMD ["dotnet", "ApiWeatherForecast.dll"]
 # docker build -t apiweatherforecast-image .
 
 # commande à utiliser pour lancer le conteneur depuis l'image :
-# docker run -d -p 80:80 apiweatherforecast-image
+# docker run -d -p 4242:80 --name api apiweatherforecast-image

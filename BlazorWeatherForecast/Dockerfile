@@ -12,3 +12,10 @@ FROM nginx:alpine AS final
 WORKDIR /usr/share/nginx/html
 COPY --from=publish /app/publish/wwwroot .
 # COPY nginx.conf /etc/nginx/nginx.conf
+
+# commande à utiliser pour build l'image :
+# on devra se déplacer dans le dossier du dokerfile avant d'éxécuter la commande suivante
+# docker build -t blazorweatherforecast-image .
+
+# commande à utiliser pour lancer le conteneur depuis l'image :
+# docker run -d -p 3630:80 blazorweatherforecast-image --name blazor
